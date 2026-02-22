@@ -1389,6 +1389,9 @@ section {
 
 .project-links {
   margin-top: var(--space-16);
+  display: flex;
+  gap: var(--space-12);
+  flex-wrap: wrap;
 }
 
 .project-link {
@@ -1396,14 +1399,22 @@ section {
   align-items: center;
   gap: var(--space-8);
   color: var(--cyber-text-accent);
+  background: rgba(34, 211, 238, 0.05);
+  border: 1px solid rgba(34, 211, 238, 0.3);
+  padding: var(--space-8) var(--space-16);
+  border-radius: var(--radius-sm);
   text-decoration: none;
   font-weight: var(--font-weight-medium);
-  transition: color var(--duration-fast) var(--ease-standard);
+  transition: all var(--duration-fast) var(--ease-standard);
+  font-size: var(--font-size-sm);
 }
 
 .project-link:hover {
-  color: var(--cyber-highlight);
-  text-shadow: 0 0 5px var(--cyber-glow);
+  background: rgba(34, 211, 238, 0.15);
+  color: var(--color-white);
+  border-color: var(--cyber-highlight);
+  box-shadow: 0 0 10px var(--cyber-glow);
+  transform: translateY(-2px);
 }
 
 /* MVP Projects Special Styling */
